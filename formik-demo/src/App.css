@@ -1,0 +1,28 @@
+.app {
+  width: 400px;
+  display: flex;
+  flex: 1;
+}
+
+.form-fields {
+  display: flex;
+  flex: 1;
+  flex-direction: "row";
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+}
+.button {
+  background-color: dodgerblue;
+  color: #fff;
+  border: unset;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.error {
+  color: red;
+  margin-left: 10px;
+  margin-top: -10px;
+  font-size: 11px;
+}
