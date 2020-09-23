@@ -7,7 +7,7 @@ import {
   View,
 } from "react-native";
 
-import onboardingData from "../config/onboardingData";
+import onboardingData from "../data/onboardingData";
 
 export default function Onboarding({ navigation }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,6 +22,7 @@ export default function Onboarding({ navigation }) {
 
   return (
     <View style={[styles.container, { backgroundColor: data.background }]}>
+      <Text style={styles.heading}>{data.heading}</Text>
       <Text style={styles.text}>{data.text}</Text>
 
       <Image style={styles.image} source={data.image} />
@@ -40,10 +41,9 @@ export default function Onboarding({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-between",
     alignItems: "center",
   },
-  text: {
+  heading: {
     marginTop: 50,
     textTransform: "uppercase",
     fontSize: 24,
@@ -51,15 +51,23 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "black",
   },
+  text: {
+    marginTop: 10,
+    fontSize: 14,
+    textAlign: "center",
+    marginBottom: 50,
+    marginHorizontal: 10,
+  },
   image: {
     width: "100%",
-    height: 200,
+    height: 300,
     resizeMode: "center",
   },
   button: {
     width: "60%",
     borderRadius: 15,
     padding: 20,
+    marginTop: 50,
     marginBottom: 20,
   },
 });
