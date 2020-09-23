@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Onboarding from "./app/screens/Onboarding";
-import Video from "./app/config/Video";
+import Video from "./app/screens/Video";
 
 const Stack = createStackNavigator();
 
