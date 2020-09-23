@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Onboarding from "./app/screens/Onboarding";
-import Video from "./app/screens/Video";
+import Home from "./app/screens/Home";
 
 const Stack = createStackNavigator();
 
@@ -16,8 +16,8 @@ export default () => (
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="Video"
-        component={Video}
+        name="Home"
+        component={Home}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

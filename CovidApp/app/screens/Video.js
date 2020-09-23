@@ -2,6 +2,9 @@ import React, { useState, useCallback } from "react";
 import { StyleSheet, View } from "react-native";
 import YoutubePlayer from "react-native-youtube-iframe";
 
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 export default function App() {
   const [playing, setPlaying] = useState(true);
 

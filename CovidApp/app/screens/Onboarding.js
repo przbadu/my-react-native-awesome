@@ -16,7 +16,7 @@ export default function Onboarding({ navigation }) {
 
   const loadNextScreen = () => {
     data.lastScreen
-      ? navigation.navigate("Video")
+      ? navigation.navigate("Home")
       : setCurrentIndex(currentIndex + 1);
   };
 
