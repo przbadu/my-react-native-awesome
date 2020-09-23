@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Image,
-  StyleSheet,
-  Text,
-  TouchableWithoutFeedback,
-  View,
-} from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import onboardingData from "../data/onboardingData";
 
@@ -26,14 +20,14 @@ export default function Onboarding({ navigation }) {
       <Text style={styles.text}>{data.text}</Text>
 
       <Image style={styles.image} source={data.image} />
-      <TouchableWithoutFeedback
+      <TouchableOpacity
         style={[styles.button, { backgroundColor: data.buttonColor }]}
         onPress={loadNextScreen}
       >
         <Text style={{ textAlign: "center" }}>
           {data.last ? "CONTINUE" : "NEXT"}
         </Text>
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
     </View>
   );
 }
