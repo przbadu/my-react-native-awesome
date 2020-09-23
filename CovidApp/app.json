@@ -2,6 +2,7 @@
   "expo": {
     "name": "CovidApp",
     "slug": "CovidApp",
+    "description": "App to recommend Vitam D, to wash hand, wear mask, and a reasearch done by Dr. John Campbell, https://www.youtube.com/watch?v=V8Ks9fUh2k8",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
