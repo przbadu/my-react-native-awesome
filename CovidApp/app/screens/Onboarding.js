@@ -3,7 +3,7 @@ import {
   Image,
   StyleSheet,
   Text,
-  TouchableHighlight,
+  TouchableWithoutFeedback,
   View,
 } from "react-native";
 
@@ -26,14 +26,14 @@ export default function Onboarding({ navigation }) {
       <Text style={styles.text}>{data.text}</Text>
 
       <Image style={styles.image} source={data.image} />
-      <TouchableHighlight
+      <TouchableWithoutFeedback
         style={[styles.button, { backgroundColor: data.buttonColor }]}
         onPress={loadNextScreen}
       >
         <Text style={{ textAlign: "center" }}>
           {data.last ? "CONTINUE" : "NEXT"}
         </Text>
-      </TouchableHighlight>
+      </TouchableWithoutFeedback>
     </View>
   );
 }
